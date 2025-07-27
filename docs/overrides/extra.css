@@ -1,0 +1,54 @@
+.md-header__button.md-logo img {
+    height: 50px; /* Adjust size */
+  }
+
+/* Remove all spacing between logo and site name */
+/* .md-header__title,
+.md-header__title .md-header__ellipsis,
+.md-header__button.md-logo,
+.md-header__button.md-logo img {
+  gap: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 10 !important;
+  margin-right: 0 !important;
+  padding-top: 0 !important;
+} */
+
+.md-header__title{
+  gap: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  padding-top:0 !important;
+}
+
+.md-header__topic {
+  position:fixed;
+  top: 0.7rem;  /* Adjust this value up/down as needed */
+    font-size: 1.1rem;      /* Increase font size (adjust as needed) */
+  font-weight: 600; 
+}
+
+:root > * {
+  --md-primary-fg-color:        #1b263b;
+  --md-primary-fg-color--light: #1b263b;
+  --md-primary-fg-color--dark:  #1b263b;
+
+  --md-accent-fg-color:         #2ec7cc;
+  --md-accent-fg-color--transparent: hsl(0, 0%, 21%);
+}
+
+/* Sidebar navigation link color */
+.md-sidebar .md-nav__link {
+  color: #a5a2a2; /* Replace with your desired text color */
+}
+
+.md-sidebar .md-nav__link--active {
+  color: #e9c46a; /* Example accent color for hover/active links */
+}
+
+.md-typeset a {
+  color: #547ed2; /* Change to your desired hex */
+}

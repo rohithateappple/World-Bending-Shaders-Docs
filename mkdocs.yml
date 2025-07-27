@@ -1,0 +1,75 @@
+site_name: World Bending Docs
+site_url: https://mydomain.org/WBSDocs
+
+theme:
+  name: material
+  logo: images/Balloon Globe.png
+  favicon: images/Balloon Globe.ico
+  palette:
+    scheme: slate  
+    primary: "#00000"
+    accent: green
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.integrate
+    - content.images.zoom  
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs
+    - content.code.copy
+
+nav:
+  - Welcome: index.md
+  - Getting Started: getting-started/getting-started.md
+  - Performance: getting-started/performance.md
+  - Real Transformations: getting-started/real-transforms.md
+  - Shaders: getting-started/shaders.md
+  - More: getting-started/more.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.extra
+
+  - toc:
+      permalink: true
+  - attr_list
+  - md_in_html
+
+plugins:
+   - glightbox
+   - search
+   - mkdocs-video:
+      is_video: True
+      video_muted: True
+      video_controls: True
+      css_style:
+        width: "70%" 
+   
+extra_css:
+  - overrides/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rohithateappple
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@turingcode
+    - icon: fontawesome/solid/envelope
+      link: mailto:rohithateapple@email.com
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/eNDczUecXD
+
+
+
