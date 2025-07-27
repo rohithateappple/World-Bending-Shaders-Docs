@@ -214,3 +214,63 @@ To fix this, simply increase the `BendRadius` until the distortion is resolved.
 ![alt text](<../images/Screenshot 2025-07-16 184308.png>){width=70%}
 
 <p align=""><em>Increased radius</em></p>
+
+## Balloon 
+
+The Balloon shader allows you to easily create inflation effects. It operates along the mesh’s local axis, meaning the inflation will follow any rotation applied to the mesh.
+
+![alt text](<../images/Screenshot 2025-07-27 152725.png>)
+
+### Usage
+
+Use `MF_Balloon` located in `WorldBendingToolkit/MaterialFunctions/BalloonFunctions`. 
+
+![alt text](<../images/Screenshot 2025-07-27 153001.png>){width=60%}
+
+### Material Parameters
+
+`MaxInflate` - Maximum inflate value. Increase this before increasing other inflation values.
+
+`LowerInflation` - Inflation for the lower half of the mesh. Default = 1.
+
+`HigherInflation` - Inflation for the upper half of the mesh. Default = 1.
+
+`InflateDirection` - Direction to inflate the mesh. Always start slowly, all three values of the vector can be used at once.
+
+`Pivot` - Inflation origin, use `MeshParticlePivotLocation` node for ISMCs. 
+
+`Offset` - Moves `Pivot`.
+
+### Notes
+
+`InflateDirection` is quite sensitive, always work with smaller values. 
+
+## The Scream
+
+This shader is an experimental work inspired by [The Scream](https://en.wikipedia.org/wiki/The_Scream) by Edvard Munch.
+
+![alt text](<../images/Screenshot 2025-07-27 154432.png>)
+
+### Usage
+
+Use `MF_TheScream` located in `WorldBendingToolkit/MaterialFunctions/TheScreamFunctions`. 
+
+![alt text](<../images/Screenshot 2025-07-27 154640.png>){width=70%}
+
+### Material Parameters
+
+`NormalStrength` - Strength of the dynamic normal.
+
+`Frequency` - Frequency of the waves. Higher = more waves.
+
+`Speed` - Speed the waves move.
+
+`Time` - Pass in `Time` node.
+
+`Strength` - Strength of the distortion caused by the wave.
+
+`WaveDirection` - Which direction does the wave come from?
+
+### Notes
+
+`WaveDirection` follows global axis by default. To change to local follow these [steps](/WBSDocs/getting-started/performance/#particle-axis)
